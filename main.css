@@ -1,42 +1,43 @@
 *{
-    margin: 0;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
 }
 header{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    
 }
-nav{
-    position: relative;
+.menu{
+    position: absolute;
+}
+.menu_items{
+    list-style: none;
 }
 a{
     text-decoration: none;
     color: black;
 }
-h1{
+.prom{
+    color: crimson;
+}
+.tittle{
     margin-bottom: 20px;
-    text-align: center;
+    
 }
 form{
-    margin-bottom: 20px;
     display: flex;
 }
-ul{
-    position: absolute;
-    margin-top: 0px;
-}
-li{
-    list-style: none;
-}
-section{
+.principalSection{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    gap: 20px;
+    margin-top: 20px;
     margin-left: 50px;
     margin-right: 50px;
+   
 }
 article > img{
     width: 200px;
@@ -59,12 +60,23 @@ aside{
 .footer__section1{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 50px;
 }
 .footer__section2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    margin-top: 150px;
     margin-bottom: 30px;
 }
-.lista{
+.footer_section2-lista{
+    list-style: none;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+.footer_section2-lista ~ li{
+    list-style: none;
 }
